@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(secrets/**)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*.p12)",
+      "Read(**/*.pfx)",
+      "Read(**/privatekey.json)",
+      "Read(**/*.sql)",
+      "Read(**/*.dump)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(npm publish:*)",
+      "Edit(src/editors/autocompleteEditor.js)",
+      "Edit(commonjs/**)",
+      "Edit(es/**)",
+      "Edit(dist/**)"
+    ]
+  }
+}
